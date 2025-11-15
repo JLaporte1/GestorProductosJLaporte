@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Productos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sistema de Gestor de Productos</h1>
+
+        <form id="form-producto">
+            <input type="text" id="nombre" placeholder="Nombre del producto">
+            <input type="text" id="categoria" placeholder="Categoría">
+            <input type="number" id="precio" placeholder="Precio">
+            <button type="submit">Agregar Producto</button>
+        </form>
+
+        <h2>Listado</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-productos"></tbody>
+        </table>
+
+        <div class="total">
+            Total acumulado: $<span id="total">0</span>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
